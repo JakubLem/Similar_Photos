@@ -30,12 +30,9 @@ def similar(a,b):
         return True
     return False
 
-
-#image1 = Image.open("ALAN_H1_DSC2575.JPG")
 image1 = Image.open("file.JPG")
 w1 = image1.width
 h1 = image1.height
-#image2 = Image.open("ALAN_H1_DSC2575v2.JPG")
 image2 = Image.open("file.JPG")
 w2 = image2.width
 h2 = image2.height
@@ -52,10 +49,8 @@ else:
         print("1No")
 
     """print(image1.width,image1.height,image2.width,image2.height)"""
-
     """second same size : w2 / h2"""
     image1 = image1.resize((w2, h2), Image.ANTIALIAS)
-    
     image2 = image2.resize((w2, h2), Image.ANTIALIAS)
     if similar(image1,image2):
         print("2Yes")
